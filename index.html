@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Paws - Pet One Page HTML 5 Theme</title>
+
+    <link rel="icon" href="img/black-favicon.svg" type="image/svg+xml">
+
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- LEAFLET STYLES -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin="" />
+    <!-- Fuentes CloudFare-Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <section class="orange-bar">
+            <div class="bar-info">
+                <div>
+                    <img src="img/map-icon.png" alt="">
+                    <p>Pet Street - Bergen, Norway</p>
+                </div>
+                <div>
+                    <img src="img/email-icon.png" alt="">
+                    <p>petshop@site.com</p>
+                </div>
+                <div>
+                    <img src="img/phone-icon.png" alt="">
+                    <p>+1 (123) 456 7890</p>
+                </div>
+            </div>
+            <div class="bar-icons">
+                <div class="hover-icon-container">
+                    <img src="img/facebook-icon-white.png" alt="">
+                </div>
+                <div class="hover-icon-container">
+                    <img src="img/twitter-icon-white.png" alt="">
+                </div>
+                <div class="hover-icon-container">
+                    <img src="img/google-icon-white.png" alt="">
+                </div>
+                <div class="hover-icon-container">
+                    <img src="img/linkedin-icon-white.png" alt="">
+                </div>
+                <div class="hover-icon-container">
+                    <img src="img/flickr-icon-white.png" alt="">
+                </div>
+                <div class="hover-icon-container">
+                    <img src="img/tumblr-icon-white.png" alt="">
+                </div>
+                <div class="hover-icon-container">
+                    <img src="img/instagram-icon-white.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="main-bar-sticky">
+            <nav class="main-bar">
+                <div>
+                    <img class="navbar-logo" src="img/logo-happypets.jpg" alt="">
+                </div>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Prices</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Offers</a></li>
+                    <li><a href="">Adoption</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- COLOR SELECTOR -->
+        <div class="colorSelectorTheme">
+            <div class="colorSelectorContainer">
+                <div class="textColorSelectorPanel">
+                    <p>Choose a Color Skin</p>
+                </div>
+                <div class="colorSelector">
+                    <img src="img/blue-color.png" alt="">
+                    <img src="img/red-color.png" alt="">
+                    <img src="img/green-color.png" alt="">
+                    <img src="img/brown-color.png" alt="">
+                    <img src="img/yellow-color.png" alt="">
+                </div>
+            </div>
+            <div class="gearTabContainer">
+                <div class="gearTab"></div>
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+        </div>
+
+        <!-- MAIN SLIDER -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="img/slide1.jpg" alt="">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <h1>Welcome to Happy Paws</h1>
+                            <p>We offer all the best quality products and services for your adorable pets.</p>
+                            <button class="buttonSlider">Our Services</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="img/slide2.jpg" alt="">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <h1>Enjoy our daily offer</h1>
+                            <p>We have great offers with amazing prices every week, check it out today!</p>
+                            <button class="buttonSlider">Our Offers</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="img/slide3.jpg" alt="">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <h1>We take care of your pet</h1>
+                            <p>Discover the amazing health services that we can offer to your pets.</p>
+                            <button class="buttonSlider">More about us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="img/slide4.jpg" alt="">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <h1>Adopt a pet</h1>
+                            <p>We have many Adotable Pets who need a home. Share the love, adopt!</p>
+                            <button class="buttonSlider">Adopt today</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bullets-box">
+                <div class="bullet activeBullet" slide-position="0"></div>
+                <div class="bullet" slide-position="1"></div>
+                <div class="bullet" slide-position="2"></div>
+                <div class="bullet" slide-position="3"></div>
+            </div>
+
+            <a href="contact.html" class="buttonSlider">Ver Más</a>
+        </div>
+
+
+        <!-- OUR SERVICES SECTION -->
+        <section class="our-services">
+            <div>
+                <h1>Our services</h1>
+                <div class="line-container">
+                    <div class="logo-container-dashed">
+                        <img class="logo-orange-dashed" src="img/fingerprint-orange-logo.svg" alt="Logo">
+                    </div>
+                    <hr class="dashed-line">
+                </div>
+            </div>
+            <div class="services-container">
+                <div class="service">
+                    <div class="service-image-container">
+                        <img src="img/service1.jpg" alt="">
+                    </div>
+                    <h4>Pet Health</h4>
+                    <p>We offer the most amazing services for your Pet's health and high-quality professionals ready
+                        to take care of your best friend.</p>
+                </div>
+                <div class="service">
+                    <div class="service-image-container">
+                        <img src="img/service2.jpg" alt="">
+                    </div>
+                    <h4>Pet Grooming</h4>
+                    <p>Let’s talk through some ideas, look at some pictures, and help you choose the next great look
+                        for your pet in our shop with the best.</p>
+                </div>
+                <div class="service">
+                    <div class="service-image-container">
+                        <img src="img/service3.jpg" alt="">
+                    </div>
+                    <h4>Pet Sitting</h4>
+                    <p>Now you can leave your pet here when you travel with safety and great care for all animals we
+                        host here at our hotel.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- OUR STATS SECTION -->
+        <section class="our-stats">
+            <div>
+                <h1>Our stats</h1>
+                <div class="line-container">
+                    <div class="logo-container-dashed">
+                        <img class="logo-orange-dashed" src="img/fingerprint-orange-logo.svg" alt="Logo">
+                    </div>
+                    <hr class="dashed-line">
+                </div>
+            </div>
+            <div class="stats-container">
+                <div class="stat">
+                    <h2>180</h2>
+                    <hr class="dashed-line short-line">
+                    <h3>Customers</h3>
+                </div>
+                <div class="stat">
+                    <h2>16</h2>
+                    <hr class="dashed-line short-line">
+                    <h3>Professionals</h3>
+                </div>
+                <div class="stat">
+                    <h2>67</h2>
+                    <hr class="dashed-line short-line">
+                    <h3>Pets Hosted</h3>
+                </div>
+                <div class="stat">
+                    <h2>50</h2>
+                    <hr class="dashed-line short-line">
+                    <h3>Products</h3>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ABOUT US SECTION -->
+        <section class="about-us ">
+            <div>
+                <h1>About us</h1>
+                <div class="line-container">
+                    <div class="logo-container-dashed">
+                        <img class="logo-orange-dashed" src="img/fingerprint-orange-logo.svg" alt="Logo">
+                    </div>
+                    <hr class="dashed-line">
+                </div>
+            </div>
+            <div class="about-us-sheets">
+                <div class="about-sheets">
+                    <div id="about_us_clinic" class="about-us-sheet-container">
+                        <h3>Our Clinic</h3>
+                    </div>
+                    <div id="about_us_phylosophy" class="about-us-sheet-container">
+                        <h3>Our Phylosophy</h3>
+                    </div>
+                    <div id="about_us_team" class="about-us-sheet-container">
+                        <h3>Our Team</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- About Us -- Tab Options -->
+
+            <div class="about-main-container">
+
+                <!-- CONTAINER 1: OUR CLINIC -->
+                <div id="content-clinic" class="about-container active">
+                    <div class="about-column">
+                        <div>
+                            <h2>We take care of your best friend</h2>
+                            <p>Interdum donec eget metus auguen unc vel mauris ultricies, vest ao ibulum orci eget,
+                                blandit
+                                quam
+                                elit, eu imperdiet neque semper lorem ipsum dolores viverra elit Aliquam erat volutpat
+                                phase
+                                llus ac
+                                sodales felis tiam non metus aliquam eros accumsan mollis eget vitae tellusm. Sed in
+                                lobortis nisl
+                                Phasellus ultrices gravida massa luctus ornare. Aliquam erat volutpat phas ellus sodales
+                                felis tiam
+                                non metus aliquam eros accumsan mollis eget vitae tellusm Pellentesque turpis lectus,
+                                placerat a
+                                ultricies a, posuere lorem ipsuet.</p>
+                        </div>
+                        <img src="/img/about.png" alt="">
+                    </div>
+                    <div class="about-services">
+                        <div class="services-container-div">
+                            <div class="icon-circle-container">
+                                <img src="img/about-us-icon1.png" data-original="img/about-us-icon1.png"
+                                    data-hover="img/about-us-white-icon1.png" alt="">
+                            </div>
+                            <h2>High Tech Clinic</h2>
+                            <p>Suspendisse blandit quam elit, eu imperdiet neque semper lorem ipsum dolores.</p>
+                        </div>
+                        <div class="services-container-div">
+                            <div class="icon-circle-container">
+                                <img src="img/about-us-icon2.png" data-original="img/about-us-icon2.png"
+                                    data-hover="img/about-us-white-icon2.png" alt="">
+                            </div>
+                            <h2>Amazing Support</h2>
+                            <p>Suspendisse blandit quam elit, eu imperdiet neque semper lorem ipsum dolores.</p>
+                        </div>
+                        <div class="services-container-div">
+                            <div class="icon-circle-container">
+                                <img src="img/about-us-icon3.png" data-original="img/about-us-icon3.png"
+                                    data-hover="img/about-us-white-icon3.png" alt="">
+                            </div>
+                            <h2>Award Winner</h2>
+                            <p>Suspendisse blandit quam elit, eu imperdiet neque semper lorem ipsum dolores.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- CONTAINER 2: OUR PHYLOSOPHY -->
+
+                <div id="content-phylosophy" class="about-container-row hide-position">
+                    <div class="phylosophy-container">
+                        <h2>Our Phylosophy</h2>
+                        <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh imperdiet interdum. Sed in
+                            lobortis nisl Phasellus ultrices gravida massa luctus ornare ellen tesque turpis lectus,
+                            placerat a ultricies a, posuere a nibh fusce mollis imperdiet interdum donec eget metus
+                            auguen unc vel mauris ultricies, vestibulum orci eget, viverra elit. Aliquam erat volutpat.
+                            Phasellus ac sodales felis tiam non metus aliquam eros accumsan mollis eget vitae tellusm.
+                        </p>
+                    </div>
+                    <div class="iframe-border">
+                        <iframe class="iframe" width="400" height="225"
+                            src="https://www.youtube.com/embed/deN3nt3Sdhc?si=CgtADfBinpmHwbwI"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+
+                <!-- CONTAINER 3: OUR TEAM -->
+                <div id="content-team" class="about-container-team hide-position">
+                    <div>
+                        <h2>Meet our Team</h2>
+                        <div class="employees-container">
+                            <div class="employee">
+                                <img src="img/team1.jpg" alt="">
+                                <p class="employee-name">Luane Silva</p>
+                                <p class="p-orange">Veterinarian</p>
+                                <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh imperdiet
+                                    interdum.</p>
+                                <div class="employee-rss-icons">
+                                    <div class="rss-icon-container">
+                                        <img src="img/twitter-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/facebook-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/linkedin-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/pinterest-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/instagram-icon-orange.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employee">
+                                <img src="img/team2.jpg" alt="">
+                                <p class="employee-name">John Suen</p>
+                                <p class="p-orange">Caretaker</p>
+                                <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh imperdiet
+                                    interdum.</p>
+                                <div class="employee-rss-icons">
+                                    <div class="rss-icon-container">
+                                        <img src="img/twitter-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/facebook-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/linkedin-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/pinterest-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/instagram-icon-orange.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employee">
+                                <img src="img/team3.jpg" alt="">
+                                <p class="employee-name">Nancy May</p>
+                                <p class="p-orange">Specialist</p>
+                                <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh imperdiet
+                                    interdum.</p>
+                                <div class="employee-rss-icons">
+                                    <div class="rss-icon-container">
+                                        <img src="img/twitter-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/facebook-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/linkedin-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/pinterest-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/instagram-icon-orange.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employee">
+                                <img src="img/team4.jpg" alt="">
+                                <p class="employee-name">Amelie Plin</p>
+                                <p class="p-orange">Veterinarian</p>
+                                <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh imperdiet
+                                    interdum.</p>
+                                <div class="employee-rss-icons">
+                                    <div class="rss-icon-container">
+                                        <img src="img/twitter-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/facebook-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/linkedin-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/pinterest-icon-orange.png" alt="">
+                                    </div>
+                                    <div class="rss-icon-container">
+                                        <img src="img/instagram-icon-orange.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- CLIENTS OPINION SECTION -->
+        <section class="clients-opinion">
+            <div>
+                <h1>What our clients say</h1>
+                <div class="line-container">
+                    <div class="logo-container-dashed">
+                        <img class="logo-orange-dashed" src="img/fingerprint-orange-logo.svg" alt="Logo">
+                    </div>
+                    <hr class="dashed-line">
+                </div>
+            </div>
+            <div class="opinion-container-frame">
+                <div class="opinion-slider">
+                    <div class="opinion-container">
+                        <img src="img/testimonial1.jpg" alt="">
+                        <p><span>"</span>Lotam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut
+                            eius
+                            animi Suspendisse
+                            a elementum anteu imperdiet et maecenas eu eros non nibh aliquet iaculis...</p>
+                        <div class="client-testimonial">
+                            <hr class="line-client">
+                            <h3>Joanna Vilken, TV Star</h3>
+                        </div>
+                    </div>
+                    <div class="opinion-container">
+                        <img src="img/testimonial2.jpg" alt="">
+                        <p><span>"</span>Lotam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut
+                            eius
+                            animi Suspendisse
+                            a elementum anteu imperdiet et maecenas eu eros non nibh aliquet iaculis...</p>
+                        <div class="client-testimonial">
+                            <hr class="line-client">
+                            <h3>Jhon Cassady, Astronaut</h3>
+                        </div>
+                    </div>
+                    <div class="opinion-container">
+                        <img src="img/testimonial3.jpg" alt="">
+                        <p><span>"</span>Lotam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut
+                            eius
+                            animi Suspendisse
+                            a elementum anteu imperdiet et maecenas eu eros non nibh aliquet iaculis...</p>
+                        <div class="client-testimonial">
+                            <hr class="line-client">
+                            <h3>Maria Silveira, Model</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bullets Clients Slider -->
+                <div class="bullets-box-clients">
+                    <div class="client-bullet" data-slide="0"></div>
+                    <div class="client-bullet" data-slide="1"></div>
+                    <div class="client-bullet" data-slide="2"></div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- OUR PRICES SECTION -->
+        <section class="our-prices">
+            <div>
+                <h1>Our prices</h1>
+                <div class="line-container">
+                    <div class="logo-container-dashed">
+                        <img class="logo-orange-dashed" src="img/fingerprint-orange-logo.svg" alt="Logo">
+                    </div>
+                    <hr class="dashed-line">
+                </div>
+            </div>
+            <div class="plans-container">
+                <div class="plan">
+                    <div class="plan-title">Basic</div>
+                    <div class="price-info-plan">
+                        <p class="plan-price">$49<span>.00</span></p>
+                        <p class="per-month">per month</p>
+                    </div>
+                    <div class="plan-services">
+                        <p>2 Dog walks</p>
+                        <p>1 Vet Visit</p>
+                        <p>1 Pet Spa</p>
+                        <p>10 Vet Calls</p>
+                        <p>Free Support</p>
+                    </div>
+                    <div class="plans-button">
+                        <button type="submit">Sign Up Now</button>
+                    </div>
+                </div>
+                <div class="plan advanced-plan">
+                    <div class="plan-title advanced-plan-title">Advanced</div>
+                    <div class="price-info-plan">
+                        <p class="plan-price">$99<span>.00</span></p>
+                        <p class="per-month">per month</p>
+                    </div>
+                    <div class="plan-services">
+                        <p>5 Dog walks</p>
+                        <p>3 Vet Visits</p>
+                        <p>5 Pet Spa</p>
+                        <p>20 Vet Calls</p>
+                        <p>Free Support</p>
+                    </div>
+                    <div class="plans-button">
+                        <button type="submit">Sign Up Now</button>
+                    </div>
+                </div>
+                <div class="plan">
+                    <div class="plan-title">Professional</div>
+                    <div class="price-info-plan">
+                        <p class="plan-price">$199<span>.00</span></p>
+                        <p class="per-month">per month</p>
+                    </div>
+                    <div class="plan-services">
+                        <p>10 Dog walks</p>
+                        <p>5 Vet Visits</p>
+                        <p>10 Pet Spa</p>
+                        <p>40 Vet Calls</p>
+                        <p>Free Support</p>
+                    </div>
+                    <div class="plans-button">
+                        <button type="submit">Sign Up Now</button>
+                    </div>
+                </div>
+                <div class="plan">
+                    <div class="plan-title">Extreme</div>
+                    <div class="price-info-plan">
+                        <p class="plan-price">$299<span>.00</span></p>
+                        <p class="per-month">per month</p>
+                    </div>
+                    <div class="plan-services">
+                        <p><span>Unlimited </span>Dog walks</p>
+                        <p><span>Unlimited </span>Vet Visits</p>
+                        <p><span>Unlimited </span>Pet Spa</p>
+                        <p><span>Unlimited </span>Vet Calls</p>
+                        <p><span>Unlimited </span>Support</p>
+                    </div>
+                    <div class="plans-button">
+                        <button type="submit">Sign Up Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- DISCOVER SHOP-SERVICES SECTION -->
+        <section class="shop-services">
+            <div class="img-services-container">
+                <img src="img/dog-calltoaction.png" alt="Dog Call to Action">
+
+                <!-- Imágenes de huesos en el fondo y frente -->
+                <div class="bones-container-back">
+                    <img src="img/bones.png" alt="Bones Background">
+                </div>
+                <div class="bones-container-front">
+                    <img src="img/bones.png" alt="Bones Foreground">
+                </div>
+            </div>
+
+            <!-- Resto del contenido de shop-services -->
+            <div class="shop-services-content">
+                <div class="shop-services-text">
+                    <h2>Discover our Pet Shop and Services</h2>
+                    <p>Contact or learn more about us and make your pet happy in your visit to our Shop and discover all
+                        our amazing products and services to make your pet very healthy and active with a lot of energy
+                        this winter lorem ipsum ipsuet dolor.</p>
+                </div>
+                <div class="shop-services-buttons">
+                    <button class="auto-width-buttons">Contact Us</button>
+                    <button class="auto-width-buttons">More About Us</button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- OUR GALLERY SECTION -->
+        <section class="our-gallery">
+            <div class="ourgallery-paddingh1">
+                <h1>Our gallery</h1>
+                <div class="line-container">
+                    <div class="logo-container-dashed">
+                        <img class="logo-orange-dashed" src="img/fingerprint-orange-logo.svg" alt="Logo">
+                    </div>
+                    <hr class="dashed-line">
+                </div>
+            </div>
+            <div class="gallery-titles">
+                <p>All</p>
+                <div class="vertical-separator"></div>
+                <p>Dog and Cats</p>
+                <div class="vertical-separator"></div>
+                <p>Other pets</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/gallery1.jpg" alt="gallery1">
+                    <img src="img/hover-arrow.svg" class="hover-arrow" alt="hover arrow">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery2.jpg" alt="gallery2">
+                    <img src="img/hover-arrow.svg" class="hover-arrow" alt="hover arrow">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery3.jpg" alt="gallery3">
+                    <img src="img/hover-arrow.svg" class="hover-arrow" alt="hover arrow">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery4.jpg" alt="gallery4">
+                    <img src="img/hover-arrow.svg" class="hover-arrow" alt="hover arrow">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery5.jpg" alt="gallery5">
+                    <img src="img/hover-arrow.svg" class="hover-arrow" alt="hover arrow">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery6.jpg" alt="gallery6">
+                    <img src="img/hover-arrow.svg" class="hover-arrow" alt="hover arrow">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery7.jpg" alt="gallery7">
+                    <img src="img/hover-arrow.svg" class="hover-arrow" alt="hover arrow">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery8.jpg" alt="gallery8">
+                    <img src="img/hover-arrow.svg" class="hover-arrow" alt="hover arrow">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery9.jpg" alt="gallery9">
+                    <img src="img/hover-arrow.svg" class="hover-arrow" alt="hover arrow">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery10.jpg" alt="gallery10">
+                    <img src="img/hover-arrow.svg" class="hover-arrow" alt="hover arrow">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery11.jpg" alt="gallery11">
+                    <img src="img/hover-arrow.svg" class="hover-arrow" alt="hover arrow">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gallery12.jpg" alt="gallery12">
+                    <img src="img/hover-arrow.svg" class="hover-arrow" alt="hover arrow">
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- THIS MONTH'S OFFER SECTION  -->
+        <section class="month-offers">
+            <div>
+                <h1>This month's offers</h1>
+                <div class="line-container">
+                    <div class="logo-container-dashed">
+                        <img class="logo-orange-dashed" src="img/fingerprint-orange-logo.svg" alt="Logo">
+                    </div>
+                    <hr class="dashed-line">
+                </div>
+            </div>
+            <div class="offer-wrapper">
+                <div class="offer-content">
+                    <div class="container-first-offer">
+                        <img src="img/offer1.png" alt="">
+                        <div>
+                            <h2>Vet Services: <span>20% Off</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit
+                                amet
+                                vulputate. Quisque mauris augue, lorem tincidunt condimentum vitae uisque mauris augue,
+                                lorem ipsum tincidunt condimentum vitae.</p>
+                        </div>
+                    </div>
+                    <div class="container-second-offer">
+                        <img src="img/offer2.png" alt="">
+                        <div>
+                            <h2>Pet School: <span>30% Off</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit
+                                amet
+                                vulputate. Quisque mauris augue, lorem tincidunt condimentum vitae uisque mauris augue,
+                                lorem ipsum tincidunt condimentum vitae.</p>
+                        </div>
+                    </div>
+                    <div class="container-third-offer">
+                        <img src="img/offer3.png" alt="">
+                        <div>
+                            <h2>Quality pet foods: <span>40% Off</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit
+                                amet
+                                vulputate. Quisque mauris augue, lorem tincidunt condimentum vitae uisque mauris augue,
+                                lorem ipsum tincidunt condimentum vitae.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bullets Offers Slider -->
+                <div class="bullets-box-month-offers">
+                    <div class="client-bullet-month" data-slide="0"></div>
+                    <div class="client-bullet-month" data-slide="1"></div>
+                    <div class="client-bullet-month" data-slide="2"></div>
+                </div>                
+            </div>
+        </section>
+
+
+
+        <!-- ADOPTION SECTION -->
+        <section class="adoption">
+            <div>
+                <h1>Adoption</h1>
+                <div class="line-container">
+                    <div class="logo-container-dashed">
+                        <img class="logo-orange-dashed" src="img/fingerprint-orange-logo.svg" alt="Logo">
+                    </div>
+                    <hr class="dashed-line">
+                </div>
+            </div>
+
+            <!-- Adopt Container -->
+            <div class="adopt-container">
+                <div class="adopt-top-container">
+                    <img src="img/adopt.jpg" alt="">
+                    <div class="text-adopt-container">
+                        <h2>Looking to Adopt an Animal?</h2>
+                        <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet
+                            interdum donec eget metus auguen unc vel mauris ul tricies, vest ibu lum orci eget, viverra
+                            elit. Aliquam erat volut pat phas ellus ac sodales felis tiam non metus ali quam eros
+                            accumsan mollis eget vitaeusm. Aliquam erat volutpat phasellus ac sodales felis tiam non
+                            metus ali quam eros accumsan mollis eget vitae tel lusm. Pellentesque turpis lectus,
+                            placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus
+                            auguen unc vel mauris ultricies, vest ibulum orci eget, viverra elit. Aliquam erat volutpat
+                            phasellus ac sodales felis tiam non metus ali quam eros accumsan mollis eget vi tae.</p>
+                    </div>
+                </div>
+                <div class="adopt-bottom-container grid-container">
+                    <div class="questions-container">
+                        <h2>Frequent Questions</h2>
+                        <div>
+                            <div class="faq-item">
+                                <div class="question-wrapper">
+                                    <p class="question">Is account registration required?</p>
+                                    <span class="arrow-icon">▼</span>
+                                </div>
+                                <div class="line-separator"></div>
+                                <p class="answer">Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh.
+                                    Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies,
+                                    vest ibulum orci eget, viverra elit.
+                                </p>
+                            </div>
+                            <div class="faq-item">
+                                <div class="question-wrapper">
+                                    <p class="question">How do I Apply?</p>
+                                    <span class="arrow-icon">▼</span>
+                                </div>
+                                <div class="line-separator"></div>
+                                <p class="answer">Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh.
+                                    Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies,
+                                    vest ibulum orci eget, viverra elit.
+                                </p>
+                            </div>
+                            <div class="faq-item">
+                                <div class="question-wrapper">
+                                    <p class="question">What documents do I need to Adopt?</p>
+                                    <span class="arrow-icon">▼</span>
+                                </div>
+                                <div class="line-separator"></div>
+                                <p class="answer">Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh.
+                                    Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies,
+                                    vest ibulum orci eget, viverra elit.
+                                </p>
+                            </div>
+                            <div class="faq-item">
+                                <div class="question-wrapper">
+                                    <p class="question">How to choose an Pet?</p>
+                                    <span class="arrow-icon">▼</span>
+                                </div>
+                                <div class="line-separator"></div>
+                                <p class="answer">Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh.
+                                    Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies,
+                                    vest ibulum orci eget, viverra elit.
+                                </p>
+                            </div>
+                            <div class="faq-item">
+                                <div class="question-wrapper">
+                                    <p class="question">Are the animals neutered?</p>
+                                    <span class="arrow-icon">▼</span>
+                                </div>
+                                <div class="line-separator"></div>
+                                <p class="answer">Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh.
+                                    Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies,
+                                    vest ibulum orci eget, viverra elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friends-container">
+                        <h2>Find a New Friend</h2>
+
+                        <div class="slider-wrapper">
+                            <button class="slider-button left-button">&#9664;</button>
+
+
+                            <div class="friends-to-adopt">
+                                <div class="animal-adopt-container">
+                                    <img src="img/adoption1.jpg" alt="">
+                                    <h6>Lilica</h6>
+                                    <p><span>Gender: </span>Female</p>
+                                    <p><span>Neutered: </span>Yes</p>
+                                    <p><span>Age: </span>5 years</p>
+                                    <button>More Info</button>
+                                </div>
+                                <div class="animal-adopt-container">
+                                    <img src="img/adoption2.jpg" alt="">
+                                    <h6>Charlie</h6>
+                                    <p><span>Gender: </span>Male</p>
+                                    <p><span>Neutered: </span>No</p>
+                                    <p><span>Age: </span>4 months</p>
+                                    <button>More Info</button>
+                                </div>
+                                <div class="animal-adopt-container">
+                                    <img src="img/adoption3.jpg" alt="">
+                                    <h6>Lucky</h6>
+                                    <p><span>Gender: </span>Male</p>
+                                    <p><span>Neutered: </span>Yes</p>
+                                    <p><span>Age: </span>1 year</p>
+                                    <button>More Info</button>
+                                </div>
+                                <div class="animal-adopt-container">
+                                    <img src="img/adoption4.jpg" alt="">
+                                    <h6>Madalene</h6>
+                                    <p><span>Gender: </span>female</p>
+                                    <p><span>Neutered: </span>No</p>
+                                    <p><span>Age: </span>2 year</p>
+                                    <button>More Info</button>
+                                </div>
+                                <div class="animal-adopt-container">
+                                    <img src="img/adoption5.jpg" alt="">
+                                    <h6>Joanne</h6>
+                                    <p><span>Gender: </span>female</p>
+                                    <p><span>Neutered: </span>Yes</p>
+                                    <p><span>Age: </span>5 year</p>
+                                    <button>More Info</button>
+                                </div>
+                                <div class="animal-adopt-container">
+                                    <img src="img/adoption6.jpg" alt="">
+                                    <h6>Cutesy</h6>
+                                    <p><span>Gender: </span>Male</p>
+                                    <p><span>Neutered: </span>Yes</p>
+                                    <p><span>Age: </span>2 year</p>
+                                    <button>More Info</button>
+                                </div>
+                            </div>
+                            <button class="slider-button right-button">&#9654;</button>
+
+                            <div class="bullets-adopt-slider">
+                                <div class="bullet-adopt" data-index="0"></div>
+                                <div class="bullet-adopt" data-index="1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- WORK BRANDS SECTION -->
+        <section class="work-brands">
+            <div>
+                <h1>Brands we work with</h1>
+                <div class="line-container">
+                    <div class="logo-container-dashed">
+                        <img class="logo-orange-dashed" src="img/fingerprint-orange-logo.svg" alt="Logo">
+                    </div>
+                    <hr class="dashed-line">
+                </div>
+            </div>
+
+            <div class="client-button-container">
+                <button class="client-button"><img src="img/client1.png" alt=""></button>
+                <button class="client-button"><img src="img/client2.png" alt=""></button>
+                <button class="client-button"><img src="img/client3.png" alt=""></button>
+                <button class="client-button"><img src="img/client4.png" alt=""></button>
+            </div>
+        </section>
+
+
+
+        <!-- CONTACT SECTION -->
+        <section class="contact">
+            <div>
+                <h1>Get in touch</h1>
+                <div class="line-container">
+                    <div class="logo-container-dashed">
+                        <img class="logo-orange-dashed" src="img/fingerprint-orange-logo.svg" alt="Logo">
+                    </div>
+                    <hr class="dashed-line">
+                </div>
+            </div>
+            <div class="contact-container">
+                <div class="info-contact-container">
+                    <div>
+                        <h2>Information</h2>
+                        <p>Contact for additional information:</p>
+                        <p><img class="information-icon" src="img/information-email.png" alt=""><span>petshop@site.com</span> or call us</p>
+                        <p><img class="information-icon" src="img/information-phone.png" alt="">+1 (123) 45 6 7890</p>
+                    </div>
+                    <div>
+                        <h2>Location & Time</h2>
+                        <p><img class="information-icon" src="img/information-location.png" alt="">We are located at Pet City, 304.</p>
+                        <p><img class="information-icon" src="img/information-hour.png" alt="">Open from 9 a.m to 10 p.m on weekdays and from 9 a.m to 2 p.m in weekends.
+                        </p>
+                    </div>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email ID">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="" placeholder="Enter your message"></textarea>
+                    <div class="contact-button">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- LOCATION SECTION -->
+        <section class="location">
+            <div id="map" class="map-container" style="width: 100%; height: 500px;"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="rss-footer">
+            <a href="#" class="icon facebook"></a>
+            <a href="#" class="icon twitter"></a>
+            <a href="#" class="icon google"></a>
+            <a href="#" class="icon linkedin"></a>
+            <a href="#" class="icon flickr"></a>
+            <a href="#" class="icon tumblr"></a>
+            <a href="#" class="icon instagram"></a>
+        </div>
+        <div class="copyright-footer">
+            <p><span>Copyright</span> © 2024 KNBDev</p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
